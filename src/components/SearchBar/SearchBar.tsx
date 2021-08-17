@@ -29,7 +29,7 @@ const SearchBar: FunctionComponent<SearchBarProps> = (props) => {
           selected={endDate}
           onChange={(date: Date) => setEndDate(date)}
         />
-        <SearchButton type="submit">
+        <SearchButton type="submit" aria-label="Search">
           <FontAwesomeIcon icon={faSearch} />
         </SearchButton>
       </SearchDatePickerContainer>
