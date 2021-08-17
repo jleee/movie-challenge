@@ -2,7 +2,7 @@
 A simple movie searching application built with React JS. Users can search for movies that are released between a single date or two dates. 
 
 ## Demo
-https://movie-challenge-10wfm46bq-jleee.vercel.app/
+https://movie-challenge-eight.vercel.app/
 
 ## APIs Used
 - Discover (https://developers.themoviedb.org/3/discover/movie-discover)
