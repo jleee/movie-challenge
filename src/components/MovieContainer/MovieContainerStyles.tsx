@@ -34,7 +34,15 @@ export const Skeleton = styled.div`
 
 export const SkeletonWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(4, 250px);
+  grid-template-columns: repeat(autofill, 250px);
   justify-content: center;
   grid-gap: 1rem;
+
+  @media (min-width: ${(props) => props.theme.mediaQueries.sm}) {
+    grid-template-columns: repeat(2, 250px);
+  }
+
+  @media (min-width: ${(props) => props.theme.mediaQueries.xl}) {
+    grid-template-columns: repeat(4, 250px);
+  }
 `;
