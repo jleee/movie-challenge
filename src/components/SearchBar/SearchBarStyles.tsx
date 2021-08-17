@@ -2,31 +2,40 @@ import styled from 'styled-components';
 import DatePicker from 'react-datepicker';
 
 export const SearchForm = styled.form`
-  padding: 3rem;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem 1.5rem;
+  @media (min-width: ${(props) => props.theme.mediaQueries.sm}) {
+    padding: 3rem;
+  }
 `;
 
 export const SearchDatePickerContainer = styled.div`
-  display: flex;
   position: relative;
+  @media (min-width: ${(props) => props.theme.mediaQueries.sm}) {
+    display: flex;
+  }
   > div {
     &:nth-child(1) input {
-      border-top-left-radius: 30px;
-      border-bottom-left-radius: 30px;
+      border-radius: 30px 0 0 30px;
     }
     &:nth-child(2) input,
     &:nth-child(3) input {
       border-left: ${(props) => `1px solid ${props.theme.colors.grey.light}`};
-      border-top-right-radius: 30px;
-      border-bottom-right-radius: 30px;
+      border-radius: 0 30px 30px 0;
       padding-right: 4rem;
     }
   }
   .react-datepicker {
     border: 0;
+  }
+  .react-datepicker-wrapper {
+    width: 50%;
+    @media (min-width: ${(props) => props.theme.mediaQueries.sm}) {
+      width: 100%;
+    }
   }
   .react-datepicker-popper {
     left: 50% !important;
@@ -73,9 +82,11 @@ export const SearchDatePicker = styled(DatePicker)`
   padding: 1.5rem 1rem;
   font-size: 1rem;
   width: 100%;
-  min-width: 200px;
   text-align: center;
   border: 0;
+  @media (min-width: ${(props) => props.theme.mediaQueries.sm}) {
+    min-width: 200px;
+  }
 `;
 
 export const SearchButton = styled.button`
