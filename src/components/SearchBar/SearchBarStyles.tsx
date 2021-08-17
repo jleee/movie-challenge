@@ -14,6 +14,7 @@ export const SearchForm = styled.form`
 
 export const SearchDatePickerContainer = styled.div`
   position: relative;
+  display: flex;
   @media (min-width: ${(props) => props.theme.mediaQueries.sm}) {
     display: flex;
   }
