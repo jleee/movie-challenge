@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const MovieCardContainer = styled.div`
   width: 100%;
   overflow: hidden;
-  margin: 0.75rem 0.5rem;
   background: ${(props) => props.theme.colors.grey.medium};
   color: ${(props) => props.theme.colors.white};
   transition: all ease 200ms;
